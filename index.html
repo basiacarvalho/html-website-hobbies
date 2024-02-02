@@ -7,30 +7,41 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header>
-      <img src="./images/basia.png" alt="Basia's headshot" />
-      <nav>
-        <ul>
-          <li><a href="#">Welcome</a></li>
-          <li><a href="./pages/hobbies.html">My Hobbies</a></li>
+    <header class="header">
+      <img class="header__img" src="./images/basia.png" alt="Basia's headshot" />
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a class="nav__link"  href="#">Welcome</a></li>
+          <li><a class="nav__link" href="./pages/hobbies.html">My Hobbies</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Basia's Hobbies Page</h1>
-      <blockquote cite="https://graciousquotes.com/hobby/">
-        <p>
-          Make time to follow your passion and never let your hobbies and
-          interests take a back seat.
-        </p>
-        <footer>- Richa Dwivedi, <cite>Gracious Quotes</cite></footer>
-      </blockquote>
+      <section class="section hero">
+        <div class="container">
+          <h1>Basia's Hobbies Page</h1>
+        </div>
+      </section>
+      <section class="section section--quote">
+        <div class="container quote">
+          <h2 class="quote__header">Get inspired</h2>
+          <blockquote class="quote-block" cite="https://graciousquotes.com/hobby/">
+            <p class="quote-block__text">
+              Make time to follow your passion and never let your hobbies and
+              interests take a back seat.
+            </p>
+            <footer class="quote-block__footer">
+              - Richa Dwivedi, <cite>Gracious Quotes</cite>
+            </footer>
+          </blockquote>
+        </div>
+      </section>
     </main>
-    <footer>
-      <address>
-        <a href="mailto:basia@example.com">basia@example.com</a>
+    <footer class="footer">
+      <address class="address">
+        <a class="address__mail" href="mailto:basia@example.com">basia@example.com</a>
       </address>
-      <p>© 2024 Barbara Carvalho</p>
+      <p class="copyright">© 2024 Barbara Carvalho</p>
     </footer>
   </body>
 </html>
