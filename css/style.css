@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "RobotoSerif-Thin";
+  src: url(../fonts/RobotoSerif-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Thin-Italic";
+  src: url(../fonts/RobotoSerif-ThinItalic.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Extra-Light";
+  src: url(../fonts/RobotoSerif-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Extra-Light-Italic";
+  src: url(../fonts/RobotoSerif-ExtraLightItalic.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Light";
+  src: url(../fonts/RobotoSerif-Regular.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Light-Italic";
+  src: url(../fonts/RobotoSerif-Italic.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Regular";
+  src: url(../fonts/RobotoSerif-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Regular-Italic";
+  src: url(../fonts/RobotoSerif-Italic.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Medium";
+  src: url(../fonts/RobotoSerif-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Medium-Italic";
+  src: url(../fonts/RobotoSerif-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Semi-Bold";
+  src: url(../fonts/RobotoSerif-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Semi-Bold-Italic";
+  src: url(../fonts/RobotoSerif-SemiBoldItalic.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Bold";
+  src: url(../fonts/RobotoSerif-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Bold-Italic";
+  src: url(../fonts/RobotoSerif-BoldItalic.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Extra-Bold";
+  src: url(../fonts/RobotoSerif-ExtraBold.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Extra-Bold-Italic";
+  src: url(../fonts/RobotoSerif-ExtraBoldItalic.ttf);
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Black";
+  src: url(../fonts/RobotoSerif-Black.ttf);
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "RobotoSerif-Black-Italic";
+  src: url(../fonts/RobotoSerif-BlackItalic.ttf);
+  font-weight: 900;
+}
+
