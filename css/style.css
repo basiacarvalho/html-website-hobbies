@@ -106,3 +106,36 @@
   font-weight: 900;
 }
 
+/* global style */
+:root {
+  --active-color: #92C7CF;
+  --background-color-light: #FBF9F1;
+  --background-color-dark: #AAD7D9;
+  --header-color: #FBF9F1;
+  --text-color-light: #e5e7eb;
+  --text-color-dark: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* styles for all pages*/
+.container {
+  margin: 0 auto;
+  max-width: 480px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
