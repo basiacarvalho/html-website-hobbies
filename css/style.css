@@ -1,119 +1,9 @@
-@font-face {
-  font-family: "RobotoSerif-Thin";
-  src: url(../fonts/RobotoSerif-Thin.ttf);
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Thin-Italic";
-  src: url(../fonts/RobotoSerif-ThinItalic.ttf);
-  font-weight: 100;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Extra-Light";
-  src: url(../fonts/RobotoSerif-ExtraLight.ttf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Extra-Light-Italic";
-  src: url(../fonts/RobotoSerif-ExtraLightItalic.ttf);
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Light";
-  src: url(../fonts/RobotoSerif-Regular.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Light-Italic";
-  src: url(../fonts/RobotoSerif-Italic.ttf);
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Regular";
-  src: url(../fonts/RobotoSerif-Regular.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Regular-Italic";
-  src: url(../fonts/RobotoSerif-Italic.ttf);
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Medium";
-  src: url(../fonts/RobotoSerif-Medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Medium-Italic";
-  src: url(../fonts/RobotoSerif-Medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Semi-Bold";
-  src: url(../fonts/RobotoSerif-SemiBold.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Semi-Bold-Italic";
-  src: url(../fonts/RobotoSerif-SemiBoldItalic.ttf);
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Bold";
-  src: url(../fonts/RobotoSerif-Bold.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Bold-Italic";
-  src: url(../fonts/RobotoSerif-BoldItalic.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Extra-Bold";
-  src: url(../fonts/RobotoSerif-ExtraBold.ttf);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Extra-Bold-Italic";
-  src: url(../fonts/RobotoSerif-ExtraBoldItalic.ttf);
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Black";
-  src: url(../fonts/RobotoSerif-Black.ttf);
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: "RobotoSerif-Black-Italic";
-  src: url(../fonts/RobotoSerif-BlackItalic.ttf);
-  font-weight: 900;
-}
-
 /* global style */
 :root {
-  --active-color: #92C7CF;
-  --background-color-light: #FBF9F1;
-  --background-color-dark: #AAD7D9;
-  --header-color: #FBF9F1;
-  --text-color-light: #e5e7eb;
-  --text-color-dark: #1f2937;
+  --active-color: #a03a6f;
+  --background-color-light: #FFF7F1;
+  --background-color-dark: #BED1CF;
+  --text-color: #a16505;
 }
 
 * {
@@ -121,6 +11,15 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-color: var(--background-color-light);
+  font-family: "Protest Riot", sans-serif;
 }
 
 ul {
@@ -139,3 +38,212 @@ ul {
   padding: 30px 0;
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 738px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-dark);
+  padding: 20px 0;
+}
+
+.header__img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--active-color);
+  box-shadow: var(--background-color-light) 0px 7px 29px 0px;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.nav__link {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+  color: var(--active-color);
+  font-weight: 700;
+  text-shadow: var(--background-color-light) 2px 2px;
+}
+
+.hero {
+  margin: 0 10px;
+}
+
+.hero__title {
+  color: var(--active-color);
+  font-size: 2.9rem;
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--text-color);
+}
+
+.quote {
+  justify-content: center;
+  background-color: var(--background-color-dark);
+  padding: 20px;
+  margin: 0 10px;
+  max-width: 500px;
+  border-radius: 20px 0 20px 0;
+}
+
+.quote__header {
+  display: none;
+}
+
+.quote-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-block__text {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.quote-block__footer {
+  align-self: flex-end;
+  font-size: 0.8rem;
+  font-weight: 100;
+  color: var(--text-color);
+}
+
+.footer {
+  background-color: var(--background-color-dark);
+  width: 100%;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  font-weight: lighter;
+  color: var(--active-color);
+  padding: 5px 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 30px 0;
+  }
+
+  .header__img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 3px solid var(--active-color);
+  }
+
+  .nav__links {
+    gap: 20px;
+  }
+
+  .nav__link {
+    font-size: 1.5rem;
+  }
+
+  .hero__title {
+    font-size: 3.2rem;
+    border-top: 3px solid var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+    padding: 20px;
+  }
+
+  .quote {
+    max-width: 650px;
+    padding: 30px;
+    border-radius: 30px 0 30px 0;
+    margin: 0;
+  }
+
+  .quote-block__text {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .quote-block__footer {
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 10px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    margin: 0;
+  }
+
+  .header__img {
+    width: 300px;
+    height: 300px;
+    border: 4px solid var(--active-color);
+    margin-bottom: 20px;
+  }
+
+  .nav__links {
+    gap: 25px;
+  }
+
+  .nav__link {
+    font-size: 1.8rem;
+  }
+
+  .hero__title {
+    font-size: 3.5rem;
+    border-top: 4px solid var(--text-color);
+    border-bottom: 4px solid var(--text-color);
+    padding: 30px;
+  }
+
+  .quote {
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 40px 0 40px 0;
+  }
+
+  .quote-block__text {
+    font-size: 1.8rem;
+  }
+
+  .quote-block__footer {
+    font-size: 1.2rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    font-weight: 100;
+    padding: 15px 0;
+  }
+}
