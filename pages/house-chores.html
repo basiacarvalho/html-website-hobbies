@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <header>
-      <img src="../images/basia.png" alt="Basia's headshot" />
-      <nav>
-        <ul>
-          <li><a href="../index.html">Welcome</a></li>
-          <li><a href="./hobbies.html">My Hobbies</a></li>
+    <header class="header">
+      <img class="header__img" src="../images/basia.png" alt="Basia's headshot" />
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a class="nav__link" href="../index.html">Welcome</a></li>
+          <li><a class="nav__link" href="./hobbies.html">My Hobbies</a></li>
         </ul>
       </nav>
     </header>
@@ -38,8 +38,13 @@
         alt="a collage of Basia's photos related to her daily house chores"
       />
     </main>
-    <footer>
-      <p>© 2024 Barbara Carvalho</p>
+    <footer class="footer">
+      <p class="copyright">© 2024 Barbara Carvalho</p>
+      <a class="scroll-to-top" href="#top">
+        <svg class="scroll-to-top__icon">
+          <use href="../images/icons.svg#icon-arrow-up"></use>
+        </svg>
+      </a>
     </footer>
   </body>
 </html>

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: ProtestRiot-Regular;
+  src: url(../fonts/ProtestRiot-Regular.ttf) format("truetype");
+}
+
 /* global style */
 :root {
   --active-color: #a03a6f;
@@ -20,7 +25,7 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   background-color: var(--background-color-light);
-  font-family: "Protest Riot", sans-serif;
+  font-family: "ProtestRiot-Regular", sans-serif;
 }
 
 ul, ol {
