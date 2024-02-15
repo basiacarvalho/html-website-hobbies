@@ -4,41 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hobbies Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
-    <header>
-      <img src="../images/basia.png" alt="Basia's headshot" />
-      <nav>
-        <ul>
-          <li><a href="../index.html">Welcome</a></li>
-          <li><a href="#">My Hobbies</a></li>
+    <header class="header">
+      <img class="header__img" src="../images/basia.png" alt="Basia's headshot" />
+      <nav class="nav">
+        <ul class="nav__links">
+          <li><a class="nav__link" href="../index.html">Welcome</a></li>
+          <li><a class="nav__link" href="#">My Hobbies</a></li>
         </ul>
       </nav>
     </header>
-    <main>
-      <h1>Favourite hobbies</h1>
-      <h2>My top 5 hobbies list:</h2>
-      <ol>
-        <li>
-          <h3><a href="./nature.html">Nature</a></h3>
+    <main class="section top-hobbies">
+      <h1 class="hero__title">Favourite hobbies</h1>
+      <h2 class="top-hobbies__title">My top 5 hobbies list:</h2>
+      <ol class="hobbies">
+        <li class="hobbies__hobby">
+          <h3 class="hobbies__title">
+            <a class="hobbies__link" href="./nature.html"> 
+              > Nature
+            </a>
+          </h3>
         </li>
-        <li>
-          <h3><a href="./sport.html">Sport</a></h3>
+        <li class="hobbies__hobby">
+          <h3 class="hobbies__title">
+            <a class="hobbies__link" href="./sport.html"> 
+              > Sport
+            </a>
+          </h3>
         </li>
-        <li>
-          <h3><a href="./english.html">English</a></h3>
+        <li class="hobbies__hobby">
+          <h3 class="hobbies__title">
+            <a class="hobbies__link" href="./english.html"> 
+              > English
+            </a>
+          </h3>
         </li>
-        <li>
-          <h3><a href="./house-chores.html">House chores</a></h3>
+        <li class="hobbies__hobby">
+          <h3 class="hobbies__title">
+            <a class="hobbies__link" href="./house-chores.html"> 
+              > House chores
+            </a>
+          </h3>
         </li>
-        <li>
-          <h3><a href="./coding.html">Coding</a></h3>
+        <li class="hobbies__hobby">
+          <h3 class="hobbies__title">
+            <a class="hobbies__link" href="./coding.html"> 
+              > Coding
+            </a>
+          </h3>
         </li>
       </ol>
     </main>
-    <footer>
-      <p>© 2024 Barbara Carvalho</p>
+    <footer class="footer">
+      <p class="copyright">© 2024 Barbara Carvalho</p>
+       <a class="scroll-to-top" href="#top">
+        <svg class="scroll-to-top__icon">
+          <use href="../images/icons.svg#icon-arrow-up"></use>
+        </svg>
+      </a>
     </footer>
   </body>
 </html>

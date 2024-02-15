@@ -14,6 +14,7 @@
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -22,7 +23,7 @@ body {
   font-family: "Protest Riot", sans-serif;
 }
 
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -54,6 +55,7 @@ ul {
   }
 }
 
+/* Main Page */
 .header {
   display: flex;
   flex-direction: column;
@@ -94,6 +96,7 @@ ul {
 
 .hero {
   margin: 0 10px;
+  padding-bottom: 0;
 }
 
 .hero__title {
@@ -150,7 +153,45 @@ ul {
   padding: 5px 0;
 }
 
+.scroll-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: var(--background-color-light);
+  border: 3px solid var(--text-color);
+  border-radius: 50px;
+  margin: 0 15px 15px 0;
+  padding: 4px 0;
+  transition: background-color 0.3s;
+}
+
+.scroll-to-top:focus,
+.scroll-to-top:hover {
+  cursor: pointer;
+  background-color: var(--background-color-dark);
+  border: 3px solid var(--active-color);
+}
+
+.scroll-to-top__icon:focus,
+.scroll-to-top__icon:hover {
+   fill: var(--active-color);
+}
+
+.scroll-to-top__icon {
+  width: 30px;
+  height: 25px;
+  fill: var(--text-color);
+}
+
 @media (min-width: 768px) {
+  .hero {
+    margin: 0;
+  }
+
   .header {
     padding: 30px 0;
   }
@@ -175,6 +216,8 @@ ul {
     border-top: 3px solid var(--text-color);
     border-bottom: 3px solid var(--text-color);
     padding: 20px;
+    width: 490px;
+    margin: 0 auto;
   }
 
   .quote {
@@ -198,13 +241,13 @@ ul {
     font-weight: 100;
     padding: 10px 0;
   }
+
+  .scroll-to-top {
+    margin: 0 20px 25px 0;
+  }
 }
 
 @media (min-width: 1200px) {
-  .hero {
-    margin: 0;
-  }
-
   .header__img {
     width: 300px;
     height: 300px;
@@ -222,6 +265,7 @@ ul {
 
   .hero__title {
     font-size: 3.5rem;
+    width: 560px;
     border-top: 4px solid var(--text-color);
     border-bottom: 4px solid var(--text-color);
     padding: 30px;
@@ -245,5 +289,78 @@ ul {
     font-size: 1.2rem;
     font-weight: 100;
     padding: 15px 0;
+  }
+
+  .scroll-to-top {
+    margin: 0 25px 35px 0;
+  }
+}
+
+/* Hobbies Page */
+.top-hobbies {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.top-hobbies__title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: var(--text-color);
+  text-shadow: var(--background-color-dark) 2px -1px 5px;
+}
+
+.hobbies__link {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--active-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.hobbies__hobby:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.hobbies__title:focus *,
+.hobbies__title:hover * {
+  color: var(--active-color);
+  font-weight: 700;
+  text-shadow: var(--background-color-dark) 2px -1px 5px;
+}
+
+@media (min-width: 768px) {
+  .top-hobbies {
+    margin: 0;
+  }
+
+  .top-hobbies__title {
+    font-size: 1.8rem;
+    margin: 25px 0 15px;
+  }
+
+  .hobbies__link {
+    font-size: 1.5rem;
+  }
+
+  .hobbies__hobby:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .top-hobbies__title {
+    font-size: 2.2rem;
+    margin: 30px 0 20px;
+  }
+
+  .hobbies__link {
+    font-size: 1.8rem;
+  }
+
+  .hobbies__hobby:not(:last-child) {
+    margin-bottom: 20px;
   }
 }

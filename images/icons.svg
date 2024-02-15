@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+<defs>
+<symbol id="icon-pick" viewBox="0 0 32 21">
+<path d="M24.877 3.238a2.797 2.797 0 1 1 4.624 3.152l.006-.01-15.174 22.381a2.798 2.798 0 0 1-4.624.01l-.006-.01-7.206-10.634a2.797 2.797 0 0 1 4.625-3.144l.006.008 4.893 7.213L24.879 3.238z"/>
+</symbol>
+<symbol id="icon-arrow-up" viewBox="0 0 32 32">
+<path stroke-width="3.2" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" d="M8 20l8-8 8 8"></path>
+</symbol>
+</defs>
+</svg>
+
