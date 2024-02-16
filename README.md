@@ -14,8 +14,8 @@
 
 ### The Project
 A responsive website consisiting of several pages:
-- Welcome page, 
-- Hobbies page,
+- "Welcome" page, 
+- "Hobbies" page,
 - "Nature" as a hobby page,
 - "Sport" as a hobby page,
 - "Engish" as a hobby page,
