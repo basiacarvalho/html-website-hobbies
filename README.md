@@ -14,13 +14,13 @@
 
 ### The Project
 A responsive website consisiting of several pages:
-- "Welcome" page, 
-- "Hobbies" page,
-- "Nature" as a hobby page,
-- "Sport" as a hobby page,
-- "Engish" as a hobby page,
-- "House Chores" as a hobby page,
-- "Coding" as a hobby page.
+- "Welcome", 
+- "Hobbies",
+- "Nature" as a hobby,
+- "Sport" as a hobby,
+- "Engish" as a hobby,
+- "House Chores" as a hobby,
+- "Coding" as a hobby.
 
 ### Links
 - Solution URL: [Github](https://github.com/basiacarvalho/kreativstorm-website-hobbies/settings/pages)
