@@ -404,9 +404,15 @@ ul, ol {
 }
 
 .favourite-hobby__img {
-  width: 100%;
+  width: 300px;
   height: auto;
   margin-top: 20px;
+}
+
+@media (min-width: 425px) {
+  .favourite-hobby__img {
+    width: 400px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -433,7 +439,7 @@ ul, ol {
   }
 
   .favourite-hobby__img {
-    width: 90%;
+    width: 550px;
     margin-top: 30px;
   }
 }
@@ -462,7 +468,7 @@ ul, ol {
   }
 
   .favourite-hobby__img {
-    width: 80%;
+    width: 750px;
     margin-top: 40px;
   }
 }
